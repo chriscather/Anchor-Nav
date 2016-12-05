@@ -1,0 +1,94 @@
+<html>
+<head>
+	<style>
+		body {
+		font-size:20px;
+		margin:0;
+		position:relative;
+		}
+		a {
+		text-decoration:none;
+		}
+		#menu {
+		background:#fff;
+		display:table;
+		padding: 0;
+		position:fixed;
+		right:0;
+		top:-20px;
+		width:50vw;
+		}
+		#menu li {
+		display:table-cell;
+		line-height:3em;
+		text-align:center;
+		}
+		.active {
+		background:#eee;
+		}
+		section#section1 {
+		margin-top:0;
+		}
+		section {
+		height:calc(100vh);
+		line-height:100vh;
+		text-align:center;
+		}
+		section:nth-child(2n+1) {
+		background:#cfc;
+		}
+		section:nth-child(2n+2) {
+		background:#ccf;
+		}
+		.back-top {
+		background:#eee;
+		border-radius:50%;
+		bottom:10px;
+		display:inline-block;
+		font-size:3em;
+		line-height:1em;
+		padding:6px;
+		position:fixed;
+		right:10px;
+		transform:rotate(180deg);
+		transition:transform 1s;
+		}
+		.back-top.bottom {
+		transform:rotate(0deg);
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="Anchor-Nav.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<ul id="menu" class="menu">
+		<li class="active"><a href="#section1">Section 1</a></li>
+		<li class=""><a href="#section2">Section 2</a></li>
+		<li class=""><a href="#section3">Section 3</a></li>
+		<li class=""><a href="#section4">Section 4</a></li>
+	</ul>
+	
+	<section id="section1">
+		<a name="section1"></a>
+		Smooth scroll to each section with no anchor tags in your address bar.
+	</section>
+	
+	<section id="section2">
+		<a name="section2"></a>
+		Navigation "Active" item will follow each section as you scroll down.
+	</section>
+	
+	<section id="section3">
+		<a name="section3"></a>
+		The "Next" button on the bottom right will always take you to the next anchor.
+	</section>
+	
+	<section id="section4">
+		<a name="section4"></a>
+		In the last section, the "Next" button automatically becomes a "Back to Top" button.
+	</section>
+	
+	<a href="#body" class="back-top">&#9650;</a>
+</body>
+</html>			

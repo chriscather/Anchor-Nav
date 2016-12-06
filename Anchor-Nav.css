@@ -19,9 +19,17 @@ a {
   display:table-cell;
   line-height:3em;
   text-align:center;
+  transition:background 0.5s;
+}
+#menu li:hover {
+  background:#eee;
 }
 .active {
-  background:#eee;
+  background:#ddd;
+}
+#menu a {
+  color:#000;
+  display:block;
 }
 section#section1 {
   margin-top:0;
